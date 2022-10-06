@@ -61,7 +61,7 @@ class TMDB:
         return data_list
 
     def Tv(self, query: str):
-        res = self.sendRequest(self.url_builder("movie", query))
+        res = self.sendRequest(self.url_builder("tv", query))
         self._call(res)
         data_list = []
         for i in res["results"]:
@@ -76,7 +76,6 @@ class TMDB:
             tv.url = "https://www.themoviedb.org/" + tv.identifier_type + "/" + str(tv.id)
 
             data_list.append(tv)
-
         return data_list
 
 
