@@ -9,6 +9,7 @@ setup(
     download_url='http://pypi.python.org/pypi/searchpie',
     description='A handy tool to search through Wikipedia, Tmdb and Mal.',
     long_description=open("README.md").read(),
+    long_description_content_type='text/markdown',
     license='MIT',
     classifiers=[
         "Programming Language :: Python :: 3",
