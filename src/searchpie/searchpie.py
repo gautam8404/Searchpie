@@ -1,3 +1,4 @@
+import os
 import json
 from .functions.mal import MAL
 from .functions.tmdb import TMDB
@@ -5,7 +6,9 @@ from .functions.wiki import WIKI
 
 
 class SearchPie:
-    _path = r"searchpie/configure.json"
+
+    _path = os.path.dirname(os.path.abspath(__file__))
+    _path = os.path.join(_path, 'configure.json')
 
     def __init__(self, args):
         self.args = args
