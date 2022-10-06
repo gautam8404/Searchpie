@@ -7,8 +7,8 @@ from .functions.wiki import WIKI
 
 class SearchPie:
 
-    _path = os.path.dirname(os.path.abspath(__file__))
-    _path = os.path.join(_path, 'configure.json')
+    working_dir = os.getcwd()
+    _path = os.path.join(working_dir, 'configure.json')
 
     def __init__(self, args):
         self.args = args
