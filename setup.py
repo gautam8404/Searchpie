@@ -15,6 +15,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    include_package_data=True,
     project_urls={
         "Source": "https://github.com/gautam8404/Searchpie"
     },
