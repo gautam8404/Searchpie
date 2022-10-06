@@ -31,8 +31,8 @@ A handy tool to search through Wikipedia, Tmdb and Mal.
 This will create a dist package in directory
 
     dist/
-    ├── searchpie_gautam8404-0.0.1-py3-none-any.whl
-    └── searchpie_gautam8404-0.0.1.tar.gz
+    ├── searchpie-0.0.1-py3-none-any.whl
+    └── searchpie-0.0.1.tar.gz
 
 After that install using pip
 
