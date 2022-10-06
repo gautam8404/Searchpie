@@ -1,2 +1,2 @@
 include LICENSE
-include /home/gautam/PycharmProjects/searchpie/src/searchpie/data/*
+include src/searchpie/data/*
