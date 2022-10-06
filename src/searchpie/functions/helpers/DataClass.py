@@ -49,6 +49,3 @@ class dataclass:
             "Synopsis": self.synopsis,
             "Url": self.url
         }
-
-    # [self.title, self.id, self.type, self.genres, self.score, self.language, self.episodes, self.chapters,
-    # self.duration, self.status, self.synopsis, self.desc, self.url]
