@@ -13,7 +13,7 @@ class dataclass:
     synopsis = None
     url = None
 
-    _identifier_types = ["movie", "tv", "wiki", "anime", "manga"]
+    _identifier_types = ["movie", "tv", "wiki", "anime", "manga", "all_wiki"]
 
     def __init__(self):
         pass
@@ -22,8 +22,12 @@ class dataclass:
         if self.identifier_type is None or self.identifier_type not in self._identifier_types:
             return "Invalid Identifier Type"
 
-        elif self.identifier_type == "wiki":
+        elif self.identifier_type == "all_wiki":
             msg = f"\033[4m{self.title}\033[0m:" + "\n\n" + self.synopsis
+            return msg
+
+        elif self.identifier_type == "wiki":
+            msg = f"\033[4m{self.title}\033[0m:" + "\n\n" + self.synopsis.split("\n\n\n")[0]
             return msg
 
         else:

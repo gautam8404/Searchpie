@@ -21,7 +21,7 @@ setup(
         "Source": "https://github.com/gautam8404/Searchpie"
     },
     install_requires=[
-        'wikipedia'
+        'requests'
     ],
     entry_points={
         'console_scripts': ['searchpie=main:main']

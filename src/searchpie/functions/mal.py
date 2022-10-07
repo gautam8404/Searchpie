@@ -20,7 +20,7 @@ class MAL:
 
     def _call(self, result):
         if result["data"] == [] or result["data"] is None:
-            raise MalExceptions("There are no results that matched your query")
+            raise MalExceptions("There are no results that matched your query, use japnese name for better search results")
         if self.order_by not in ["mal_id", "title", "type", "rating", "start_date", "end_date", "episodes", "score",
                                  "scored_by", "rank", "popularity", "members", "favorites"]:
             raise MalExceptions("Invalid OrderBy Flag")

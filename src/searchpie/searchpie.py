@@ -6,7 +6,6 @@ from .functions.wiki import WIKI
 
 
 class SearchPie:
-
     abs_path = os.path.dirname(os.path.abspath(__file__))
     _path = os.path.join(abs_path, 'data/configure.json')
 
@@ -50,7 +49,6 @@ class SearchPie:
 
     def method_parser(self, method: str, query: list):
         self._call(method)
-        args = self.args
         query = " ".join(query)
         if method == "wiki":
             w = WIKI(query)

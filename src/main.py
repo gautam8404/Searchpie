@@ -50,6 +50,8 @@ def main():
 
         data = data[:int(args.pages)]
         for i in data:
+            if args.all is True and i.identifier_type == "wiki":
+                i.identifier_type = "all_wiki"
             print(i)
             if len(data) > 1:
                 print("\n")

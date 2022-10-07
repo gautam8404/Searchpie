@@ -31,16 +31,16 @@ A handy tool to search through Wikipedia, Tmdb and Mal.
 This will create a dist package in directory
 
     dist/
-    ├── searchpie-0.0.1-py3-none-any.whl
-    └── searchpie-0.0.1.tar.gz
+    ├── searchpie-0.0.4-py3-none-any.whl
+    └── searchpie-0.0.4.tar.gz
 
 After that install using pip
 
-    pip install searchpie_gautam8404-0.0.1-py3-none-any.whl
+    pip install searchpie-0.0.4-py3-none-any.whl
 
 # Usage
 
-Searchpie requires TMDb Api Key to search for movies and tv shows you can get it [here](https://www.themoviedb.org/settings/api) although you can use searchpie without that too
+Searchpie requires TMDb Api Key to search for movies and tv shows you can get it [here](https://www.themoviedb.org/settings/api) although you can still use searchpie for everything else
 
 
 
@@ -68,5 +68,4 @@ For full help use
 
 # Credits
 
-- [wikipedia module](https://github.com/goldsmith/Wikipedia/)
 - [jikan.moe](https://github.com/jikan-me)

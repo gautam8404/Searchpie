@@ -10,11 +10,11 @@ def arguments():
                             usage="%(prog)s [-h] [-v,--version]", formatter_class=argparse.RawDescriptionHelpFormatter)
 
     arg_help = parser.add_argument_group(title="Search Flags", description="""
-    -a, --anime <query>   searches mal for anime name 
-    -b --manga <query>   searches mal for manga name 
     -m --movies <query>   searches tmdb for movie name
     -t --tv <query>   searches tmdb for tv show name
     -w --wiki <query>   searches wiki for wikipedia article
+    -a, --anime <query>   searches mal for anime name, use jap name for better results 
+    -b --manga <query>   searches mal for manga name, use jap name for better results
 
 
     searching TMDB for movies or TV shows requires tmdb api key, get your api key here:
@@ -48,6 +48,7 @@ def arguments():
     options.add_argument("-o", "--open", dest="browser", action='store_true', help="Opens page in browser")
     options.add_argument("-p", dest="pages", action='store', metavar="pages", default=1,
                          help="Number of results to be displayed, displays upto 10 results")
+    options.add_argument("--all", dest="all",action='store_true',help="Print all sections of wikipedia page")
     options.add_argument("--set-default", dest="default", action='store_true', help="changes default method")
     options.add_argument("--show-default", dest="show_def", action='store_true', help="shows default method")
     options.add_argument("--set-tmdb-key", dest="key", action='store', help="changes api key for tmdb")
