@@ -23,11 +23,11 @@ class dataclass:
             return "Invalid Identifier Type"
 
         elif self.identifier_type == "all_wiki":
-            msg = f"\033[4m{self.title}\033[0m:" + "\n\n" + self.synopsis + "\nUrl:" + self.url
+            msg = f"\033[4m{self.title}\033[0m:" + "\n\n" + self.synopsis + "\n\nUrl:" + self.url
             return msg
 
         elif self.identifier_type == "wiki":
-            msg = f"\033[4m{self.title}\033[0m:" + "\n\n" + self.synopsis.split("\n\n\n")[0] + "\nUrl:" + self.url
+            msg = f"\033[4m{self.title}\033[0m:" + "\n\n" + self.synopsis.split("\n\n\n")[0] + "\n\nUrl:" + self.url
             return msg
 
         else:
@@ -51,5 +51,5 @@ class dataclass:
             "Duration": self.duration,
             "Status": self.status,
             "Synopsis": self.synopsis,
-            "Url": self.url
+            "\nUrl": self.url
         }
