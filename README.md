@@ -68,4 +68,4 @@ For full help use
 
 # Credits
 
-- [jikan.moe](https://github.com/jikan-me)
+- [jikan.moe](https://github.com/jikan-me) for Mal api
